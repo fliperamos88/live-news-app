@@ -43,11 +43,12 @@ const getNews = async () => {
 
 setInterval(async (evt) => {
   res = await getNews();
-}, 900000);
+}, 11000);
 
 io.on('connection', (socket) => {
   socket.emit('news', res);
   setInterval(async (evt) => {
+    console.log('new msg from the server');
     socket.emit('news', res);
   }, 6000);
 });
