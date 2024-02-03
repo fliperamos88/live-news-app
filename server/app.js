@@ -36,7 +36,6 @@ const getNews = async () => {
     });
     return articles;
   } catch (err) {
-    console.log('This is an error: ' + err);
     counter = 0;
     return lastResponse;
   }
@@ -55,5 +54,4 @@ io.on('connection', (socket) => {
 
 server.listen(process.env.PORT || 4000, async () => {
   res = await getNews();
-  console.log('listening on 4000');
 });
