@@ -33,6 +33,7 @@ const getNews = async () => {
       language: 'en',
       pageSize: 6,
       page: counter,
+      sortBy: 'relevancy',
     });
     return articles;
   } catch (err) {
@@ -43,14 +44,13 @@ const getNews = async () => {
 
 setInterval(async (evt) => {
   res = await getNews();
-}, 11000);
+}, 900000);
 
 io.on('connection', (socket) => {
   socket.emit('news', res);
   setInterval(async (evt) => {
-    console.log('new msg from the server');
     socket.emit('news', res);
-  }, 6000);
+  }, 15000);
 });
 
 server.listen(process.env.PORT || 4000, async () => {
