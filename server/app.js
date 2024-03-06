@@ -32,7 +32,10 @@ const getNews = async () => {
     const { articles } = await newsapi.v2.topHeadlines({
       language: 'en',
       pageSize: 6,
-      page: counter,
+      country: 'us',
+      // alternatively we can use a counter to rotate through the news pages instead of showing only the top 6 most relevant
+      // page: counter,
+      page: 1,
       sortBy: 'relevancy',
     });
     return articles;
