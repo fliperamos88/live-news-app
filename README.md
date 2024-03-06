@@ -1,5 +1,5 @@
 
-# Live-News - headlines app supported by the News API
+# Live-News - headlines app supported by the News API (alternative to Google News Api)
 
 - Live-News:
   - [Description](#description)
@@ -17,7 +17,7 @@ This application was developed with the support of the following tools:
 
 - Programming languages: [JavaScript](https://www.javascript.com)
 - Libraries/Frameworks: [Express](https://expressjs.com), [React](https://react.dev), [Socket.io](https://socket.io/docs/v4/)
-- News API: [https://newsapi.org/s/google-news-api]
+- Third party API: [News Api](https://newsapi.org/s/google-news-api)
 
 
 ## Installation
