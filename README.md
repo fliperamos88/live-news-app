@@ -8,7 +8,7 @@
 
 ## Description
 
-Stay up-to-date with the latest headlines using this real-time news application. Powered by WebSockets and the News API, it delivers breaking news and updates directly to your browser.
+Stay up-to-date with the latest headlines using this real-time news application. Powered by WebSockets and the News API, it delivers breaking news and updates directly to your browser with updates every 15 minutes. 
 
 
 ## Tech Stack
